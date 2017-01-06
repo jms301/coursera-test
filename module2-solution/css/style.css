@@ -6,6 +6,7 @@
 }
 
 body {
+  font-size: 18px;
   font-family: "Comic Sans MS", cursive, sans-serif;
   padding: 0px 20px;
 }
@@ -16,7 +17,7 @@ h1 {
   margin-bottom: 25px;
 }
 
-div.section {
+section {
   margin: 20px;
   padding: 57px 15px 15px 15px;
   background: lightslategrey;
@@ -24,7 +25,7 @@ div.section {
   position: relative;
 }
 
-div.section>h2 {
+section>h2 {
   position: absolute;
   top: -1px;
   right: -1px;
@@ -34,15 +35,15 @@ div.section>h2 {
   padding: 8px;
 }
 
-div#section1>h2 {
+#section1>h2 {
   background: darksalmon;
 }
 
-div#section2>h2 {
+#section2>h2 {
   background: firebrick;
 }
 
-div#section3>h2 {
+#section3>h2 {
   background: gold;
 }
 
@@ -57,6 +58,9 @@ div#section3>h2 {
   div.col-tb-12 {
     width: 100%;
   }
+  #section1, #section2 {
+    min-height: 600px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -67,4 +71,21 @@ div#section3>h2 {
     width: 33.3%;
   }
 
+  section {
+    min-height: 750px;
+  }
+
+}
+
+
+@media (min-width: 1100px) {
+  section {
+    min-height: 700px;
+  }
+}
+
+@media (min-width: 1200px) {
+  section {
+    min-height: 400px;
+  }
 }
