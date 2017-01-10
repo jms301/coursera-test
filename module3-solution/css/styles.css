@@ -1,0 +1,21 @@
+section {
+  background-color: grey;
+  padding: 5px 15px 15px;
+  margin-top: 10px;
+}
+
+div.navbar-collapse {
+  padding: 0px;
+}
+
+ul.nav {
+  margin: 0px;
+  background: white;
+}
+ul.nav>li {
+  background: gold;
+  border-bottom: 1px black solid;
+}
+ul.nav>li:first-child {
+  border-top: 1px black solid;
+}
